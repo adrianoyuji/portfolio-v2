@@ -1,30 +1,20 @@
 import React from "react";
+import { useLayout } from "hooks/layout";
+import { BiMenu } from "react-icons/bi";
 
 const Navigator = () => {
-  const desktopNavigator = () => {
-    return (
-      <div className="flex flex-row items-center space-x-2 pr-1">
-        <h2 className="text-xl text-gray-100 cursor-pointer hover:text-red-700 transition ease-in-out duration-200">
-          About
-        </h2>
-        <h2 className="text-xl text-gray-100 cursor-pointer hover:text-red-700 transition ease-in-out duration-200">
-          Skills
-        </h2>
-        <h2 className="text-xl text-gray-100 cursor-pointer hover:text-red-700 transition ease-in-out duration-200">
-          Projects
-        </h2>
-        <h2 className="text-xl text-gray-100 cursor-pointer hover:text-red-700 transition ease-in-out duration-200">
-          Contact
-        </h2>
-      </div>
-    );
-  };
+  const { handleSidebar } = useLayout();
 
-  /*   const mobileNavigator = () => {
-    return null;
-  }; */
-
-  return desktopNavigator();
+  return (
+    <div className="flex flex-row items-center space-x-2 pr-1">
+      <BiMenu
+        onClick={handleSidebar}
+        color="white"
+        size="28"
+        className=" cursor-pointer hover:bg-gray-600 active:bg-gray-500 rounded"
+      />
+    </div>
+  );
 };
 
 export default Navigator;
