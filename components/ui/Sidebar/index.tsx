@@ -6,7 +6,7 @@ const Sidebar = () => {
 
   return (
     <div className="flex flex-col sm:w-1/4 w-3/4 h-screen bg-gray-800 z-20 absolute right-0">
-      <div className="flex bg-purple-600 p-2">
+      <div className="flex bg-blue-400 p-2">
         <h2 className="text-xl text-gray-900 flex-grow ">Navigation</h2>
         <VscChromeClose
           color="#111827"
@@ -16,30 +16,35 @@ const Sidebar = () => {
         />
       </div>
       <hr className="bg-black" />
-      <div className="flex flex-col p-2">
+      <nav className="flex flex-col p-2">
         <ul>
           <li>
-            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-purple-500 transition ease-in-out duration-200">
+            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-blue-500 transition ease-in-out duration-200">
               About
             </h2>
           </li>
           <li>
-            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-purple-500 transition ease-in-out duration-200">
+            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-blue-500 transition ease-in-out duration-200">
+              Career
+            </h2>
+          </li>
+          <li>
+            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-blue-500 transition ease-in-out duration-200">
               Experience
             </h2>
           </li>
           <li>
-            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-purple-500 transition ease-in-out duration-200">
+            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-blue-500 transition ease-in-out duration-200">
               Projects
             </h2>
           </li>
           <li>
-            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-purple-500 transition ease-in-out duration-200">
+            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-blue-500 transition ease-in-out duration-200">
               Contact
             </h2>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
   );
 };
