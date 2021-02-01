@@ -5,7 +5,7 @@ const Sidebar = () => {
   const { handleSidebar } = useLayout();
 
   return (
-    <div className="flex flex-col sm:w-1/4 w-3/4 h-screen bg-gray-800 z-20 absolute right-0">
+    <div className="flex flex-col sm:w-1/4 w-3/4 h-screen bg-gray-900 z-20 absolute right-0">
       <div className="flex bg-blue-400 p-2">
         <h2 className="text-xl text-gray-900 flex-grow ">Navigation</h2>
         <VscChromeClose
@@ -25,17 +25,17 @@ const Sidebar = () => {
           </li>
           <li>
             <h2 className="text-xl text-gray-100 cursor-pointer hover:text-blue-500 transition ease-in-out duration-200">
+              Projects
+            </h2>
+          </li>
+          <li>
+            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-blue-500 transition ease-in-out duration-200">
               Career
             </h2>
           </li>
           <li>
             <h2 className="text-xl text-gray-100 cursor-pointer hover:text-blue-500 transition ease-in-out duration-200">
               Experience
-            </h2>
-          </li>
-          <li>
-            <h2 className="text-xl text-gray-100 cursor-pointer hover:text-blue-500 transition ease-in-out duration-200">
-              Projects
             </h2>
           </li>
           <li>
