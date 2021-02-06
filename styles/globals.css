@@ -19,6 +19,7 @@
     url("public/images/footerbg.jpg");
   width: 100%;
   height: auto;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
@@ -33,16 +34,46 @@
   text-shadow: 2px 2px #000000;
 }
 
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav-on {
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
 @media (max-width: 641px) {
   [class*="bg-image"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  [class*="sidenav-on"] {
+    width: 75vw;
+  }
 }
 @media (min-width: 640px) {
   [class*="bg-image"] {
     flex-direction: row;
+  }
+
+  [class*="sidenav-on"] {
+    width: 25vw;
   }
 }
 

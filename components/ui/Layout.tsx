@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Header from "components/ui/Header/index";
-import { useLayout } from "hooks/layout";
 import Sidebar from "components/ui/Sidebar/index";
 
 type Props = {
@@ -13,8 +12,6 @@ const Layout = ({
   children,
   title = "Adriano Vasconcelos | Web Developer",
 }: Props) => {
-  const { sidebar } = useLayout();
-
   return (
     <div className="layout">
       <Head>
@@ -29,7 +26,7 @@ const Layout = ({
           {children}
         </main>
       </div>
-      {sidebar && <Sidebar />}
+      <Sidebar />
     </div>
   );
 };

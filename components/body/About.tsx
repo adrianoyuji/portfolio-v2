@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="w-full min-h-auto p-4 bg-blue-400">
+    <section className="w-full min-h-auto p-4 bg-green-300">
       <h1 className="font-serif text-black text-5xl pb-2">About me</h1>
       <div className="flex flex-col h-auto p w-full sm:flex-row ">
         <div className="flex flex-1 w-full items-start justify-center">
-          <div className="w-3/4 h-3/4 sm:w-1/2 sm:h-1/2 my-8">
+          <div className="w-3/4 h-3/4 sm:w-1/3 sm:h-1/3 my-8">
             <Image
               className="profile-pic"
-              src="/images/profile.jpeg"
+              src="/images/profile.jpg"
               alt="profile pic"
               height="100%"
               width="100%"
