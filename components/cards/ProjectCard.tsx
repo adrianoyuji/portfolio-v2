@@ -37,9 +37,9 @@ const ProjectCard = ({
   github_url,
 }: ProjectProps) => {
   return (
-    <div className="py-2 flex flex-col md:flex-row h-auto w-11/12 bg-white shadow-lg rounded transform hover:scale-95 duration-300 ease-in-out">
-      <div className="flex-3">
-        <img src={imgurl} alt={title} className="rounded-t p-4" />
+    <div className="py-2 flex flex-col xl:flex-row h-auto w-full sm:w-11/12 bg-white shadow-lg rounded transform hover:scale-95 duration-300 ease-in-out">
+      <div className="flex flex-3 rounded justify-center">
+        <img src={imgurl} alt={title} className="rounded p-4" />
       </div>
       <div className="flex-1 flex-col p-4">
         <h1 className="text-xl flex flex-row items-center h-auto ">

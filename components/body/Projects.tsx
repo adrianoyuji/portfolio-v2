@@ -16,18 +16,26 @@ const Projects = () => {
       <div className="flex flex-row justify-center items-center w-full space-x-4 p-4">
         <button
           onClick={() => setIsPrivate(true)}
-          className="py-3 px-1 bg-indigo-500 hover:bg-indigo-700 active:bg-indigo-900 rounded-lg text-white font-bold w-full sm:w-1/6"
+          className={`py-3 px-1  ${
+            isPrivate
+              ? " bg-indigo-800 hover:bg-indigo-900 active:bg-indigo-900"
+              : "bg-indigo-500 hover:bg-indigo-700 active:bg-indigo-900"
+          } rounded-lg text-white font-bold w-full sm:w-1/6`}
         >
           🔒 Private
         </button>
         <button
           onClick={() => setIsPrivate(false)}
-          className="py-3 px-1 bg-indigo-500 hover:bg-indigo-700 active:bg-indigo-900 rounded-lg text-white font-bold w-full sm:w-1/6"
+          className={`py-3 px-1  ${
+            !isPrivate
+              ? " bg-indigo-800 hover:bg-indigo-900 active:bg-indigo-900"
+              : "bg-indigo-500 hover:bg-indigo-700 active:bg-indigo-900"
+          } rounded-lg text-white font-bold w-full sm:w-1/6`}
         >
           📂 Public
         </button>
       </div>
-      <div className="flex flex-col items-center space-y-2 ">
+      <div className="flex flex-col items-center space-y-2">
         {projects.map(
           (project, index) =>
             isPrivate === project.private_project && (
