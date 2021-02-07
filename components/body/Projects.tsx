@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import ProjectCard from "components/cards/ProjectCard";
 import projects from "utils/projects/index";
+import { useLayout } from "hooks/layout";
 
 const Projects = () => {
   const [isPrivate, setIsPrivate] = useState<boolean>(true);
-
+  const { projectsRef } = useLayout();
   return (
-    <section className="bg-gray-100 w-full h-auto p-4">
+    <section ref={projectsRef} className="bg-gray-100 w-full h-auto p-4">
       <h1 className="font-serif text-black text-5xl pb-2">Projects</h1>
       <p className="text-md">
         With my 1+ years of experience I have build a few projects, I divided in

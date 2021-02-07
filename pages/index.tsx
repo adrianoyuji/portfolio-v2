@@ -6,15 +6,17 @@ import Career from "components/body/Career";
 import Projects from "components/body/Projects";
 import Contact from "components/body/Contact";
 
-const IndexPage = () => (
-  <Layout title="Adriano Vasconcelos | Web Developer">
-    <Billboard />
-    <About />
-    <Projects />
-    <Career />
-    <Experience />
-    <Contact />
-  </Layout>
-);
+const IndexPage = () => {
+  return (
+    <Layout title="Adriano Vasconcelos | Web Developer">
+      <Billboard />
+      <About />
+      <Projects />
+      <Career />
+      <Experience />
+      <Contact />
+    </Layout>
+  );
+};
 
 export default IndexPage;

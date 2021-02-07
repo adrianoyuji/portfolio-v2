@@ -1,6 +1,7 @@
 import React, { useState, FormEvent } from "react";
 import Link from "next/link";
 import api from "config/api";
+import { useLayout } from "hooks/layout";
 
 interface ErrorHandler {
   name: boolean;
@@ -8,16 +9,21 @@ interface ErrorHandler {
   message: boolean;
 }
 
+const intial_state = {
+  name: false,
+  email: false,
+  message: false,
+};
+
 const Contact = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
-  const [error, setError] = useState<ErrorHandler>({
-    name: false,
-    email: false,
-    message: false,
-  });
+  const [error, setError] = useState<ErrorHandler>({ ...intial_state });
   const [success, setSuccess] = useState<boolean>(false);
+
+  const { contactRef } = useLayout();
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     try {
@@ -43,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full min-h-auto bg-black">
+    <section ref={contactRef} className="w-full min-h-auto bg-black">
       <div className="footer-bg-image">
         <div className="flex flex-col h-auto p w-full">
           <h1 className="font-serif text-black text-5xl pb-2 text-white">
