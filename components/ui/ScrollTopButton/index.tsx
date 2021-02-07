@@ -2,7 +2,7 @@ import React from "react";
 import { useLayout } from "hooks/layout";
 import { FaChevronUp } from "react-icons/fa";
 
-const Sidebar = () => {
+const ScrollTopButtons = () => {
   const { scrollTo } = useLayout();
 
   return (
@@ -15,4 +15,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default ScrollTopButtons;
