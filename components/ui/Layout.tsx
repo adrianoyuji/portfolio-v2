@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Head from "next/head";
 import Header from "components/ui/Header/index";
 import Sidebar from "components/ui/Sidebar/index";
+import ScrollTopButton from "components/ui/ScrollTopButton/index";
 
 type Props = {
   children?: ReactNode;
@@ -26,6 +27,7 @@ const Layout = ({
           {children}
         </main>
       </div>
+      <ScrollTopButton />
       <Sidebar />
     </div>
   );

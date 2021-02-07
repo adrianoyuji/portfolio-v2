@@ -7,7 +7,10 @@ const Experience = () => {
   const { experienceRef } = useLayout();
 
   return (
-    <section ref={experienceRef} className="bg-gray-100 w-full h-auto p-4">
+    <section
+      ref={experienceRef}
+      className=" py-14 bg-gray-100 w-full h-auto p-4"
+    >
       <h1 className="font-serif text-black text-5xl pb-2">Experience</h1>
       <p className="text-black text-xl pb-3">
         Throughout my developer adventure, I have studied and worked with these

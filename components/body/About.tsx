@@ -6,7 +6,10 @@ import { useLayout } from "hooks/layout";
 const About = () => {
   const { aboutRef } = useLayout();
   return (
-    <section ref={aboutRef} className="w-full min-h-auto p-4 bg-green-300">
+    <section
+      ref={aboutRef}
+      className="w-full min-h-auto py-14 p-4 bg-gradient-to-r from-green-400 to-blue-500 "
+    >
       <h1 className="font-serif text-black text-5xl pb-2">About me</h1>
       <div className="flex flex-col h-auto p w-full sm:flex-row ">
         <div className="flex flex-1 w-full items-start justify-center">
