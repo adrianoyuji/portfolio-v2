@@ -8,7 +8,7 @@ const About = () => {
       <h1 className="font-serif text-black text-5xl pb-2">About me</h1>
       <div className="flex flex-col h-auto p w-full sm:flex-row ">
         <div className="flex flex-1 w-full items-start justify-center">
-          <div className="w-3/4 h-3/4 sm:w-1/3 sm:h-1/3 my-8">
+          <div className="w-3/4 h-3/4 md:w-1/2 md:h-1/2 md:w-3/4 md:h-3/4 xl:w-1/2 xl:h-1/2 my-8">
             <Image
               className="profile-pic"
               src="/images/profile.jpg"

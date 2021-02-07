@@ -80,9 +80,9 @@ const Contact = () => {
               </div>
             </div>
           </form>
-          <span className="text-white flex justify-center">
+          <footer className="text-white flex justify-center">
             Made with ❤ by Adriano Vasconcelos
-          </span>
+          </footer>
         </div>
       </div>
     </section>
