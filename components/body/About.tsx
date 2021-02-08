@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ResumeButton from "components/ui/ResumeButton";
 import { useLayout } from "hooks/layout";
 
 const About = () => {
@@ -57,6 +58,9 @@ const About = () => {
             spend several hours without noticing it, the feeling of
             accomplishing a difficult task is one of my favorite!
           </p>
+          <div className="flex items-center justify-center">
+            <ResumeButton />
+          </div>
         </div>
       </div>
     </section>
