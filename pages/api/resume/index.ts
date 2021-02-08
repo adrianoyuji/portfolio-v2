@@ -1,6 +1,8 @@
 import { NextApiResponse, NextApiRequest } from "next";
 import fs from "fs";
 import path from "path";
+import getConfig from "next/config";
+const { serverRuntimeConfig } = getConfig();
 
 const handler = async (request: NextApiRequest, response: NextApiResponse) => {
   const { method } = request;
@@ -27,10 +29,9 @@ const handler = async (request: NextApiRequest, response: NextApiResponse) => {
 export default handler;
 
 const downloadResume = async (response: NextApiResponse) => {
-  console.log(__dirname);
   const file_path = path.join(
-    __dirname,
-    "/public/resume/",
+    serverRuntimeConfig.PROJECT_ROOT,
+    "./public/resume/",
     "Adriano Vasconcelos - CV.pdf"
   );
   const stat = fs.statSync(file_path);
