@@ -27,9 +27,10 @@ const handler = async (request: NextApiRequest, response: NextApiResponse) => {
 export default handler;
 
 const downloadResume = async (response: NextApiResponse) => {
+  console.log(__dirname);
   const file_path = path.join(
     __dirname,
-    process.cwd() + "/public/resume/",
+    "/public/resume/",
     "Adriano Vasconcelos - CV.pdf"
   );
   const stat = fs.statSync(file_path);
