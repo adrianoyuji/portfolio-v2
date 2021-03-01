@@ -14,6 +14,7 @@ import {
   SiPostgresql,
   SiNextDotJs,
   SiFirebase,
+  SiMongodb,
 } from "react-icons/si";
 import { MdAndroid } from "react-icons//md";
 
@@ -32,7 +33,8 @@ export default [
     ],
     platforms: [{ icon: MdAndroid, color: "green" }],
     imgurl: "https://i.imgur.com/glKQHch_d.webp?maxwidth=760&fidelity=grand",
-    live_url: "",
+    live_url:
+      "https://play.google.com/store/apps/details?id=br.com.softwarebistro.menu",
     github_url: "",
   },
   {
@@ -73,6 +75,25 @@ export default [
     imgurl: "https://i.imgur.com/bum8B81.gif",
     live_url: "",
     github_url: "",
+  },
+  {
+    private_project: true,
+    title: "Enalta Jóias Web",
+    company: "Enalta Jóias",
+    company_url: "https://www.instagram.com/enaltajoias/",
+    description:
+      "My first ever freelance project! I developed this system in order to help a small jewelry business to catalog their products and create custom products lists for their customers. The owner said this system does in 1 minute what took them 2 hours to make, and now they don't spend more money with paper sheets!",
+    technologies: [
+      { icon: FaReact, color: "skyblue" },
+      { icon: FaNodeJs, color: "green" },
+      { icon: SiNextDotJs, color: "black" },
+      { icon: SiTypescript, color: "DodgerBlue" },
+      { icon: SiMongodb, color: "forestGreen" },
+    ],
+    platforms: [{ icon: FaDesktop, color: "black" }],
+    imgurl: "https://i.imgur.com/KRlFPGF.gif",
+    live_url: "https://enaltajoias.vercel.app/",
+    github_url: "https://github.com/adrianoyuji/enaltajoias",
   },
   {
     private_project: false,

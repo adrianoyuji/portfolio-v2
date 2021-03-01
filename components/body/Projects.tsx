@@ -12,7 +12,7 @@ const Projects = () => {
       <p className="text-md">
         With my 1+ years of experience I have build a few projects, I divided in
         Public and Private projects, the latter being made for the companies I
-        have worked for, thus the source code is not available.
+        have worked for, thus the source code may not be available.
       </p>
       <div className="flex flex-row justify-center items-center w-full space-x-4 p-4">
         <button
