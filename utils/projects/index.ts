@@ -91,7 +91,7 @@ export default [
       { icon: SiMongodb, color: "forestGreen" },
     ],
     platforms: [{ icon: FaDesktop, color: "black" }],
-    imgurl: "https://i.imgur.com/KRlFPGF.gif",
+    imgurl: "https://i.imgur.com/yKFjimD.gif",
     live_url: "https://enaltajoias.vercel.app/",
     github_url: "https://github.com/adrianoyuji/enaltajoias",
   },
